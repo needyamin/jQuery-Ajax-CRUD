@@ -1,7 +1,8 @@
 <html>
 <head>	
 <title>JQuery CRUD</title>
-<style> input{padding:10px;width:50%;margin-top:1%;}</style>
+<style> input{padding:10px;width:50%;margin-top:1%;} tr,td{border:1px 
+	solid black;padding:5px;}</style>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body style="text-align:center;">
@@ -18,7 +19,8 @@
 <div id="msg"> </div>
 <!-- form End-->	
 
-<table border="1" id="table_output" style="padding:5px;"></table>
+<table id="table_output" 
+style="padding:5px;text-align:center;width:50%;" align="center"></table>
 
 
 

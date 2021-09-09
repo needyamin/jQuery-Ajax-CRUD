@@ -16,7 +16,12 @@ $name = $mydata['myname'];
 $email = $mydata['myemail'];
 $mobile = $mydata['myphone'];
 
+if($name == '' or $email == '' or $mobile == '') {
+echo"Please fill up all fields";
+}
 
+else{
+	
 $sql = "INSERT INTO `userinfo` (`id`, `name`, `email`, `mobile`) VALUES (NULL, '$name', '$email', '$mobile')";
 
 if ($conn->query($sql) === TRUE) {
@@ -27,5 +32,6 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close(); 
+}
 
 ;?>
