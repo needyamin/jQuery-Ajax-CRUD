@@ -1,5 +1,5 @@
 <?php 
-$conn = new mysqli("localhost","needyamin","Yamin143","jQdata");
+$conn = new mysqli("localhost","database_username","database_password","database_name");
 
 $sql = "SELECT * from userinfo";
 $result = $conn->query($sql);
